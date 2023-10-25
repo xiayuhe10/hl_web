@@ -1,5 +1,14 @@
 import request from '@/utils/request'
 
+// APP菜单
+export function addAppMenu(data) {
+  return request({
+    url: '/system/role/addAppMenu',
+    method: 'put',
+    data: data
+  })
+}
+
 // 查询角色列表
 export function listRole(query) {
   return request({
